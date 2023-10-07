@@ -1,0 +1,252 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+
+
+}
+
+.header {
+    height: 10vh;
+    width: 100%;
+}
+
+.logoImg {
+    width: 64px;
+    height: 32px;
+    position: relative;
+    top: 10px;
+    left: 8%;
+}
+
+.formClass {
+    display: inline-flex;
+    position: relative;
+    left: 20%;
+    width: 1000px;
+    border-radius: 5px;
+    height: 20vh;
+
+}
+
+.favorites {
+    text-decoration: none;
+    float: right;
+    position: relative;
+    text-align: center;
+    width: 10vw;
+    right: 5%;
+    background-color: white;
+    border: 2px 2px red solid;
+    border-radius: 13px;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 50vw;
+    height: 6vh;
+    position: relative;
+    top: 10px;
+}
+
+.searchIconContainer {
+    height: 4vh;
+    width: 30px;
+    position: relative;
+    top: 10px;
+    background-repeat: no-repeat;
+    background-color: #0d6efd;
+    background-image: url('../imdb/searchIcon.png');
+    border: none;
+    cursor: pointer;
+}
+
+
+.input-group {
+    width: 30%;
+}
+
+#movieDetails {
+    position: relative;
+    margin-top: 10vh;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#poster {
+    height: 20vh;
+    width: 50vw;
+}
+
+.movie {
+    color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.conatiner {
+    display: inline-flex;
+    width: 100vw;
+}
+
+.main {
+
+    margin: 10px;
+    display: inline;
+}
+
+.sidenav {
+    width: 30%;
+    margin: 10px;
+    display: inline;
+}
+
+.suggestion {
+    width: 320px;
+    height: 320px;
+    position: relative;
+    box-shadow: rgba(82, 82, 82, 0.25) 0px 54px 55px, rgba(217, 211, 211, 0.12) 0px -12px 30px,
+     rgba(244, 218, 218, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+     rgba(237, 231, 231, 0.09) 0px -3px 5px;
+    display: inline-flex;
+}
+
+.left35 {
+    left: 35%;
+    position: relative;
+}
+
+.displayCard {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    margin: 10px;
+
+
+}
+
+.displayCard1 {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+
+
+}
+
+.displayCard1 img {
+    width: 220px;
+    height: 200px;
+    object-fit: fill;
+    background-position: center;
+}
+
+.displayCard img {
+    width: 220px;
+    height: 200px;
+    object-fit: fill;
+    background-position: center;
+}
+
+.displayCard:hover img {
+    transform: scale(1.2);
+    transition: .5s transform;
+}
+
+.favorite-button {
+    /* height: 30px;
+    width: 70px;
+    position: relative;
+    background-color: #0d6efd;
+
+    color: aqua; */
+    padding: 0 6px 0 6px;
+    margin: 6px 8px 6px 8px;
+    min-width: 88px;
+    border-radius: 15px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    min-height: 20px;
+}
+
+.colorWhite {
+    color: white;
+}
+
+.mainContainer {
+    display: inline-flex;
+}
+
+.Card1 {
+    height: 250px;
+    width: 250px;
+    margin: 0px 5px;
+}
+
+.Card1 img {
+    height: 200px;
+    width: 220px;
+    margin: 0px 5px;
+}
+
+.Card1:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.alignnCenter {
+    text-align: center;
+}
+
+/* Details Page */
+
+.containerforDetails {
+    min-height: 50vh;
+    width: 80vw;
+    margin: 0 5vw;
+    background-color: #f0f0f0;
+    color: #000000;
+    display: inline-flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+}
+
+.title {
+    font-size: 40px;
+    text-shadow: 2px 2px orange;
+    letter-spacing: 2px;
+    font-weight: 800;
+
+}
+
+#moviePosterforDetails {
+    /* height: 76vh; */
+    width: 20vw;
+    object-fit: contain;
+    position: relative;
+    background-position: center;
+}
+
+.movieImage {
+    min-width: 20vw;
+
+}
+
+.margin5 {
+    margin: 5px;
+}
+
+.marginleft35 {
+    margin-left: 35px;
+}
+
+h3 {
+    color: grey;
+    font-weight: 800;
+}
