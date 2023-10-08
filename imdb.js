@@ -50,6 +50,27 @@ function listenFunc(func, delay){
 
 }
 
+// function showDetails(idnumber) {
+//     let showmovieId = idnumber;
+//     localStorage.setItem("id", showmovieId);
+//     console.log(showmovieId ," showmovieId");
+//     window.location = "details.html";
+// }
+
+// function showDetails(movieId) {
+//     // Redirect to the details page with the selected movie ID
+//     console.log(movieId, " movieId");
+//     window.location.href = `details.html?id=${movieId}`;
+// }
+
+function showDetails(movieId) {
+    // Redirect to the details page with the selected movie ID
+    localStorage.setItem("id", movieId);
+    console.log(movieId, " movieId");
+    window.location.href = `details.html?id=${movieId}`;
+}
+
+
 async function searchData(){
 
  const query = inputdata.value;
@@ -77,15 +98,20 @@ async function searchData(){
                             // Display the movie title and a "favorite" button
                             suggestionItem.innerHTML = `
                                 <div class="displayCard">
-                                <span><img src="${movie.Poster}"></span>
+                                <span><img src="${movie.Poster}" 
+                                onclick="showDetails('${movie.imdbID}')"></span>
                                 <br>
                                 <h5 class="colorWhite">${movie.Title}</h5> <br>
                                 <button class="favorite-button" data-movie="${movie.imdbID}" onclick="onClickToast()">Favorite</button>
 
                                 </div>
                             `;
+
+                         
                             
                             suggestions.appendChild(suggestionItem);
+
+                           
                         });
                     } else {
                         // Handle no search results
@@ -128,7 +154,7 @@ async function searchData(){
     }
     
     
-
+   
     function removeFromFavorites(movieId) {
         // Get the existing favorites from Local Storage
         const existingFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
