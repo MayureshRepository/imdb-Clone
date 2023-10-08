@@ -35,11 +35,16 @@ body {
     position: relative;
     text-align: center;
     width: 10vw;
+    height: 4vh;
     right: 5%;
     background-color: white;
-    border: 2px 2px red solid;
+    border: 2px 2px red ;
     border-radius: 13px;
     margin-top: 10px;
+}
+.favorites a{
+    text-decoration: none;
+    font-weight: 600;
 }
 
 input[type="text"] {
@@ -47,9 +52,13 @@ input[type="text"] {
     height: 6vh;
     position: relative;
     top: 10px;
+    padding-left: 20px;
 }
 input:focus{
-    box-shadow: 2px 5px 30px 4px red;
+    box-shadow: 2px 5px 50px 10px red;
+    outline: none;
+    border: none;
+    border-radius: 20px;
 }
 .searchIconContainer {
     height: 4vh;
@@ -66,21 +75,29 @@ input:focus{
 /* unvisited link */
 a:link {
     color: red;
+    position: relative;
+    top: 2px;
   }
   
   /* visited link */
   a:visited {
     color: green;
+    position: relative;
+    top: 2px;
   }
   
   /* mouse over link */
   a:hover {
     color: hotpink;
+    position: relative;
+    top: 2px;
   }
   
   /* selected link */
   a:active {
     color: blue;
+    position: relative;
+    top: 2px;
   }
 
 .input-group {
@@ -125,7 +142,8 @@ a:link {
 
 .suggestion {
     width: 320px;
-    height: 320px;
+    height: 330px;
+    margin: 5px 20px;
     position: relative;
     box-shadow: rgba(82, 82, 82, 0.25) 0px 54px 55px, rgba(217, 211, 211, 0.12) 0px -12px 30px,
      rgba(244, 218, 218, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
@@ -140,9 +158,10 @@ a:link {
 
 .displayCard {
     width: 300px;
-    height: 100px;
+    height: 320px;
     position: relative;
     margin: 10px;
+    overflow: hidden;
 
 
 }

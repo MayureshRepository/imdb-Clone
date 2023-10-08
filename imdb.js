@@ -50,18 +50,6 @@ function listenFunc(func, delay){
 
 }
 
-// function showDetails(idnumber) {
-//     let showmovieId = idnumber;
-//     localStorage.setItem("id", showmovieId);
-//     console.log(showmovieId ," showmovieId");
-//     window.location = "details.html";
-// }
-
-// function showDetails(movieId) {
-//     // Redirect to the details page with the selected movie ID
-//     console.log(movieId, " movieId");
-//     window.location.href = `details.html?id=${movieId}`;
-// }
 
 function showDetails(movieId) {
     // Redirect to the details page with the selected movie ID
@@ -102,7 +90,7 @@ async function searchData(){
                                 onclick="showDetails('${movie.imdbID}')"></span>
                                 <br>
                                 <h5 class="colorWhite">${movie.Title}</h5> <br>
-                                <button class="favorite-button" data-movie="${movie.imdbID}" onclick="onClickToast()">Favorite</button>
+                                <button class="favorite-button" data-movie="${movie.imdbID}" onclick="onClickToast()">Add To Favorite</button>
 
                                 </div>
                             `;
