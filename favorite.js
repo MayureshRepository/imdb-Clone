@@ -49,7 +49,7 @@ function removeMovie(id) {
     arr.splice(index,1);
     console.log(arr);
     localStorage.setItem("favorites",JSON.stringify(arr));
-    alert("your hero remove successfulled");
+    alert("your movie is removed successfully");
     location.reload();
    
 }
