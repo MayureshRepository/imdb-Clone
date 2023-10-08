@@ -17,7 +17,7 @@ function fetchData(){
 
     for (let i = 0; i < arr.length; i++) {
    
-    console.log(arr[i] , " arr[i]");
+   //  console.log(arr[i] , " arr[i]");
     promises.push(  fetch(`https://www.omdbapi.com/?apikey=f135a77d&i=${encodeURIComponent(arr[i])}`)
     .then((response)=>response.json())
     .then((data)=>{
@@ -29,8 +29,11 @@ function fetchData(){
 
     <div class="Card1" >
     <div><img src="${data.Poster}" onclick="showDetails('${arr[i]}')"></div>
-    <div class="colorWhite">${data.Title}</div>
+    <h4 class="colorWhite">${data.Title}</h4>
+   
        </div>
+       <button class="remove-from-favorites" data-movie="${data.movieId}" 
+       onclick="removeMovie('${arr[i]}')">Remove</button>
     </div>
 
        `
@@ -39,7 +42,17 @@ function fetchData(){
   
    }
 }
-
+function removeMovie(id) {
+   
+   var index=arr.indexOf(id);
+    console.log(index);
+    arr.splice(index,1);
+    console.log(arr);
+    localStorage.setItem("favorites",JSON.stringify(arr));
+    alert("your hero remove successfulled");
+    location.reload();
+   
+}
 
 
 
