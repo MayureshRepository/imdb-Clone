@@ -328,3 +328,43 @@ h3 {
     color: grey;
     font-weight: 800;
 }
+
+
+
+@media (min-width:320px) and (max-width:480px) {
+
+
+    .formClass {
+        max-width: 60vw;
+        min-width: 50vw;
+        top:4vh;
+        
+    }
+
+    input[type="text"] {
+        min-width: 45vw;
+        max-width: 50vw;
+        min-height: 50px;
+        padding-left: 10px;
+    }
+
+    .favorites {
+         font-size: 12px;
+         min-width: 60px;
+        width: 17vw;
+        min-height: 40px;
+        max-height: 12vh;
+      
+    }
+
+    .suggestion {
+        max-width: 70vw;
+        min-width: 50vw;
+        height: 330px;
+        margin: 5px 35px;
+     
+    }
+
+
+    
+}
