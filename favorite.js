@@ -29,7 +29,7 @@ function fetchData(){
 
     <div class="Card1" >
     <div><img src="${data.Poster}" onclick="showDetails('${arr[i]}')"></div>
-    <h4 class="colorWhite">${data.Title}</h4>
+    <h6 class="colorWhite">${data.Title}</h6>
    
        </div>
        <button class="remove-from-favorites" data-movie="${data.movieId}" 
